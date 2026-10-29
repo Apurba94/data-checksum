@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-checksum"
+version = "0.1.0"
+description = "Create and verify SHA-256 manifests for research datasets to detect silent changes."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+data-checksum = "data_checksum.cli:main"
+
+[tool.setuptools]
+packages = ["data_checksum"]
